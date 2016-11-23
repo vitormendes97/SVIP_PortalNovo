@@ -31,8 +31,3 @@ function carousel() {
  
   });
 }
-
-
-function changeButtonColor(){
-      
-}

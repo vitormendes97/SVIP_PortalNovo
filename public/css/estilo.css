@@ -204,6 +204,9 @@ form a {
 .mg-tp-8 {
 	margin-top : 8%;
 }
+.mg-tp-12 {
+	margin-top : 12%;
+}
 .mg-tp-17 {
 	margin-top : 17%;
 }
@@ -276,6 +279,14 @@ form a {
 	padding-top: 3%;
 }
 
+.pd-tp-7 {
+	padding-top: 7%;
+}
+
+.pd-bt-9 {
+	padding-bottom: 9%;
+}
+
 .line-height-config-desktop {
 	line-height: 1px;
 }
@@ -319,13 +330,13 @@ form a {
 }
 
 .preco_full p strong , .preco p strong {
-	font-size: 24px;
+	font-size: 29px;
 }
 
 .preco_full  p:nth-child(2)  , .preco p:nth-child(2) {
 	color: #fff;
 	font-weight: 500;
-	padding-top: 4%;
+	padding-top: 7%;
 }
 
 .preco_full p:nth-child(3) {
@@ -353,10 +364,56 @@ form a {
 	padding: 0.7% 5% 0.7% 5%;
 }
 
+#footer {
+	background: #F0F0F0;
+}
 
+#footer h2 {
+	color: #000;
+	font-weight: 900;
+}
 
+#footer h3 {
+	padding-left: 31%;
+    font-size: 15px;
+    padding-right: 157px;
+    text-align: justify;
+}
 
-/*RESPONSIVO*/
+#footer p {
+	padding-right: 13%;
+	color: #000;
+}
+
+#footer2 {
+	background: #DCDCDC;
+}
+
+#footer2 p{
+	font-weight: normal;
+	padding-top: 1%;
+}
+
+#facebook {
+	background-image: url(../img/social_sprite.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 178px;
+    height: 31px;
+    width: 34%;
+    margin-right: 59%;
+}
+
+#twitter {
+	background-image: url(../img/social_sprite.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 178px;
+    height: 31px;
+    width: 34%;
+    margin-right: 59%;
+}
+/*RESPONSIVO MOBILE*/
 @media (max-width: 767px) {
 	
 	#logo {
@@ -456,12 +513,12 @@ form a {
 	.preco_full  p:nth-child(2)  , .preco p:nth-child(2) {
 		color: #fff;
 		font-weight: 500;
-		padding-top: 4%;
+		padding-top: 8%;
 	    line-height: 19px;
 	}
 
 	.real {
-		font-size: 13px !important;	
+		font-size: 15px !important;	
 	}
 
 	.preco_full p:nth-child(3) {
