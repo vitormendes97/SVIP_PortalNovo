@@ -235,12 +235,16 @@ form a {
 #transparent-bg-black h3 {
 	font-size: 17px;
 	font-weight: lighter; 
-	padding-right: 30%;
-	padding-left: 30%;
+	padding-right: 26%;
+	padding-left: 24%;
 }
 
 #transparent-bg-black .row:first-child {
 	padding-top: 5%;
+}
+
+.mkt-row {
+	padding-left: 11%;
 }
 
 .mkt-row p:first-child {
@@ -252,6 +256,104 @@ form a {
 	font-size: 14px;
 	font-weight: lighter;
 }
+
+
+.h2-config {
+	color: #000;
+	font-size: 28px;
+}
+
+.h3-config {
+	color: #000;
+	font-size: 22px;
+}
+
+.client-svip-text {
+	padding-top: 8%;
+}
+
+.pd-tp-3 {
+	padding-top: 3%;
+}
+
+.line-height-config-desktop {
+	line-height: 1px;
+}
+
+.btn-custom-red {
+	background-color: #FE0000 !important;
+	color: #fff !important;
+	width: 171px;
+	height: 54px;
+}
+
+.btn-custom-red:active ,.btn-custom-red:focus , .btn-custom-red:target {
+	background-color: #fff !important;
+	color: #000 !important;
+	width: 171px;
+	height: 54px;
+	border: 2px solid#753B39 !important;
+	outline: none !important;
+}
+
+#line {
+	background-image: url('../img/line.png');
+	background-position: 50%;
+	background-size: 59%;
+	height: 75px;
+	background-repeat: no-repeat;
+}
+
+.preco_full {
+	background-image: url('../img/preco_full.png');
+	background-size: 100%;
+	height: 272px;
+	background-repeat: no-repeat;
+	color: #000;
+}
+
+.preco_full p:first-child  , .preco p:first-child {
+	padding-top: 8%;
+	font-weight: lighter;
+	font-size: 16px;
+}
+
+.preco_full p strong , .preco p strong {
+	font-size: 24px;
+}
+
+.preco_full  p:nth-child(2)  , .preco p:nth-child(2) {
+	color: #fff;
+	font-weight: 500;
+	padding-top: 4%;
+}
+
+.preco_full p:nth-child(3) {
+	font-weight: 500;
+	padding-top: 8%;
+}
+
+.real {
+	font-weight: 900;
+}
+
+
+.preco {
+	background-image: url('../img/preco.png');
+	background-size: 100%;
+	height: 190px;
+	background-repeat: no-repeat;
+}
+
+#trial {
+	background: #FE0000 !important;
+	color: #fff;
+	font-weight: bold;
+	font-size: 19px;
+	padding: 0.7% 5% 0.7% 5%;
+}
+
+
 
 
 /*RESPONSIVO*/
@@ -313,5 +415,77 @@ form a {
 
 	.font-custom2 {
 		font-size: 17px;
+	}
+
+	#transparent-bg-black h2 {
+		line-height: 34px;
+	}
+
+	#transparent-bg-black h3 {
+		padding: 0;
+	}
+
+	.mkt-row {
+		padding: 0;
+	}
+
+	.mkt-row p:first-child {
+		text-align: center;
+	}
+
+	.mkt-row p:last-child {
+		text-align: center;
+		padding: 0;
+	}
+
+	.mkt-img {
+		display: block;
+		margin: auto;
+	}
+
+	#line {
+		background-size: 92%;
+	}
+
+	.preco_full p:first-child  , .preco p:first-child {
+		padding-top: 7%;
+		line-height: 20px;
+		margin-bottom: 0%;
+	}
+
+	.preco_full  p:nth-child(2)  , .preco p:nth-child(2) {
+		color: #fff;
+		font-weight: 500;
+		padding-top: 4%;
+	    line-height: 19px;
+	}
+
+	.real {
+		font-size: 13px !important;	
+	}
+
+	.preco_full p:nth-child(3) {
+		font-weight: 500;
+		padding-top: 2%;
+		font-size: 11px;
+	}
+
+	.preco_full {
+		height: 187px;
+		background-size: 106%;
+	}
+
+	#trial {
+		padding: 3.7% 5% 3.7% 5%;
+	}
+
+	.btn-custom-red {
+	    width: 100px;
+	    height: 54px;
+	}
+
+	.btn-custom-red:active ,.btn-custom-red:focus , .btn-custom-red:target {
+		width: 100px;
+	    height: 54px;
 	}
 }

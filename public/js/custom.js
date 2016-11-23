@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	removeElementClassResponsivo(".list-tec-dt","list-tec-dt");
+      removeElementClassResponsivo("");
 	carousel();
 });
 
@@ -29,4 +30,9 @@ function carousel() {
       // itemsMobile : false
  
   });
+}
+
+
+function changeButtonColor(){
+      
 }
