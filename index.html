@@ -1,22 +1,98 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>SalãoVIP</title>
-	<meta charset="utf-8">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1, user-scalable=no"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="public/css/estilo.css">
-	<link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="public/fontawsome/css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="public/carousel/owl.carousel.css">
+<html><head>
+  <title>SalãoVIP</title>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1, user-scalable=no"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="public/fontawsome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="public/carousel/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="public/css/estilo.css">
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="public/carousel/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="public/js/custom.js"></script>
+  <script type="text/javascript" src="public/bootstrap/js/bootstrap.js"></script>
+
 </head>
 <body>
-	
-<header>
-	 		
-	 		<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+<div class="menuVoador hidden-xs hidden-sm" style="position: fixed; width: 100%; background-color: rgb(255, 255, 255); z-index: 999999; top: 0px; border-bottom: 1px solid rgb(204, 204, 204); display: none;">
+  <div class="container">
+    <div class="col-md-4">
+    <img src="public/img/logo-escuro.png" class="logo">
+  </div>
+  <div class="col-md-8">
+    <ul class="list-inline menu1" style="
+    margin-top: 10px;">
+      <li>
+        <a  class="cursor-pointer " id="gestao">MELHORE SUA GESTÃO</a>
+      </li>
+      <li>
+        <a  class="cursor-pointer " id="vendas">AUMENTE SUAS VENDAS</a>
+      </li>
+      <li>
+        <a  class="cursor-pointer" id="recomendacao">RECOMENDAÇÕES</a>
+      </li>
+      <li>
+        <a class="cursor-pointer " id="precos">PREÇOS</a>
+      </li>
+      <li>
+        <button class="btn btn-default" id="cadastrese"> CADASTRE-SE</button>
+      </li>
+    </ul>
+  </div>
+  </div>
+
+  <div style="
+    background: #0bb5b2;padding: 8px;
+    height: 46px;" id="gestao_menu">
+    <ul class="list-inline listaMenu" style="
+    max-width: 800px;
+    margin: 0 auto;">
+
+        <li class="">
+        <a href="http://www.salaovip.com.br/programa/sistema-online-multiusuario" class="ativo">Sistema Online e Multiusuário</a></li>
+        <li ><a href="http://www.salaovip.com.br/programa/agenda" class="">Agenda</a></li>
+        <li><a href="http://www.salaovip.com.br/programa/profissionais" class="">Profissionais</a></li>
+        <li><a href="http://www.salaovip.com.br/programa/clientes" class="">clientes</a></li>
+        <li><a href="http://www.salaovip.com.br/programa/financeiro" class="">Financeiro</a></li>
+        <li><a href="http://www.salaovip.com.br/programa/estoque" class="">Estoque</a></li>
+        <li><a href="http://www.salaovip.com.br/programa/relatorios" class="">Relatórios</a></li>
+      
+    </ul>
+  </div>
+
+  <div style="
+    background: #e46367;padding: 8px;
+    height: 46px;" id="vendas_menu">
+    <ul class="list-inline listaMenu" style="
+    max-width: 800px;
+    margin: 0 auto;">
+
+        <li><a href="http://www.salaovip.com.br/programa/sistema-online-multiusuario" class="ativo">SMS Marketing</a></li>
+        <li><a href="http://www.salaovip.com.br/programa/agenda" class="">E-mail Marketing</a></li>
+        <li><a href="http://www.salaovip.com.br/programa/profissionais" class="">Divulgação Online</a></li>
+        <li><a href="http://www.salaovip.com.br/programa/clientes" class="">Vale Presente</a></li>
+        <li><a href="http://www.salaovip.com.br/programa/financeiro" class="">Promoções</a></li>
+        <li><a href="http://www.salaovip.com.br/programa/estoque" class="">Recomendações</a></li>
+        
+      
+    </ul>
+  </div>
+  
+  </div>
+  
+
+<header style="
+    border-bottom: 1px solid #ccc;
+">
+      
+  <nav class="container navbar navbar-default" style="
+    margin-bottom: 0px;
+    border: none;
+">
+  
+  
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -24,151 +100,123 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
-      	  <!-- <img id="logo" src="public/img/logo-escuro.png"> -->
+      <a class="" href="#">
+        <img src="public/img/logo-escuro.png" class="logo" style="">
       </a>
 
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li> <a href="#">Já sou cliente 
         <span class="sr-only">(current)</span></a></li>
         
         <li>
-        		<a href="#" id="navbar-text-red">
-				        		Experimente
-				 </a>
+            <a href="#" id="navbar-text-red">
+                    Experimente
+         </a>
         </li>
-       
+       <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Melhorar Gestão <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Melhorar Gestão</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
       </ul>
     
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-			<!-- <nav class="navbar navbar-default">
-			  <div class="container-fluid">
-			   
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			     
-			
-			      	 	<img id="logo" src="public/img/logo-escuro.png">
-			      
-			    </div>
+    </div>
 
-   
-				    <div class="collapse navbar-collapse navbar-right" id="navbar1">
-				      <ul class="nav navbar-nav">
-				        <li ><a href="#">Já sou cliente <span class="sr-only">(current)</span></a></li>
-				        <li>
-				        	<a href="#" id="navbar-text-red">
-				        		Experimente
-				        	</a>
-				        </li>
-				        <li>
-				        	<a href="#">
-				        		<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-				        	</a>
-				        </li>
-				      </ul>
-				 
-				    </div>
-				  </div>
-				</nav>
-		 -->
-	
+  
+  </nav>
+
+  
+  
+  
 </header>
-	<div class="container container-yt">
-		<div class="row">
-			<div class="col-md-6">
-				<h1 class="text-uppercase ">
-					<strong>Programa para Salão com os Melhores Recursos do Mercado</strong>
-				</h1>
-				<h2>O software para Salão já é Utilizado por 4000 estabelecimentos</h2>
+  <div class="container container-yt">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="text-uppercase ">
+          <strong>Programa para Salão com os Melhores Recursos do Mercado</strong>
+        </h1>
+        <h2>O software para Salão já é Utilizado por 4000 estabelecimentos</h2>
 
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe width="80%" height="300" src="https://www.youtube.com/embed/ia_xHHX1i1c?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-				</div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="80%" height="300" src="https://www.youtube.com/embed/ia_xHHX1i1c?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+        </div>
 
-			</div>
-			<!-- FORMULARIO -->
-			<div class="col-md-6">
-				<!-- Faixa -->
-				<div class="row row-mg-tp-4">
-					<div class="col-md-12" id="faixa1">
-						<p class="middle-text">10 dias grátis</p>
-					</div>
-				</div>
-				<form id="salon">
-					<div class="row">
-						<div class="col-md-12">
-							<input type="text" name="" placeholder="Nome do Estabelecimento" 
-							class="form-control">
-						</div>
-					</div>
+      </div>
+      <!-- FORMULARIO -->
+      <div class="col-md-6">
+        <!-- Faixa -->
+        <div class="row row-mg-tp-4">
+          <div class="col-md-12" id="faixa1">
+            <p class="middle-text">10 Dias Grátis</p>
+          </div>
+        </div>
+        <form id="salon">
+          <div class="row">
+            <div class="col-md-12">
+              <input type="text" name="" placeholder="Nome do Estabelecimento" class="form-control">
+            </div>
+          </div>
 
-					<div class="row">
-						<div class="col-md-12">
-							<input type="text" name="" placeholder="Nome do responsável" 
-							class="form-control">
-						</div>
-					</div>
+          <div class="row">
+            <div class="col-md-12">
+              <input type="text" name="" placeholder="Nome do responsável" class="form-control">
+            </div>
+          </div>
 
 
-					<div class="row">
-						<div class="col-md-12">
-							<input type="text" name="" placeholder="Email" 
-							class="form-control">
-						</div>
-					</div>
+          <div class="row">
+            <div class="col-md-12">
+              <input type="text" name="" placeholder="Email" class="form-control">
+            </div>
+          </div>
 
 
-					<div class="row">
-						<div class="col-md-12">
-							<input type="text" name="" placeholder="Celular" 
-							class="form-control centered">
-						</div>
-					</div>
+          <div class="row">
+            <div class="col-md-12">
+              <input type="text" name="" placeholder="Celular" class="form-control centered">
+            </div>
+          </div>
 
-					<div class="row">
-							<div class="col-md-12">
-								<p class="text-center">Possui código promocional?
-								 	<a href="#">Clique Aqui</a>
-								 </p>
-							</div>
-					</div>
+          <div class="row">
+              <div class="col-md-12">
+                <p class="text-center">Possui código promocional?
+                  <a href="#">Clique Aqui</a>
+                 </p>
+              </div>
+          </div>
 
-					<div class="row">
-							<div class="col-md-12">
-								<button type="submit" class="btn btn-default item-centralize" id="btn-now">
-								Comece Agora!</button>
-							</div>
-					</div>
+          <div class="row">
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-default item-centralize" id="btn-now">
+                Comece Agora!</button>
+              </div>
+          </div>
 
-				</form>
+        </form>
 
-				
+        
 
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 
-	<div class="container-fluid" id="tec">
+  <div class="container-fluid" id="tec">
         <div class="row">
             <div class="col-md-10 ">
                 <div class="row">
                 <!-- Finger Imagem -->
                     <div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-1">
-                        <img id="finger" 
-                            src="public/img/finger.png"
-                            alt="">
+                        <img id="finger" src="public/img/finger.png" alt="">
                     </div>
                     <div class="col-md-5 col-sm-5" id="tecnologia-text">
 
@@ -190,8 +238,8 @@
                             <div class="col-md-12 col-sm-12">
                                 <dl class="dl-horizontal list-tec">
                                   <dt class="list-tec-dt" style="text-align: left;">
-                                  	<img src="public/img/online.png">
-                                  	</dt>
+                                    <img src="public/img/online.png" class="tec-img">
+                                    </dt>
                                   <dd>
                                       <p>Online</p>
                                       <p>Inteiramente Online, ou seja, não é preciso instalação.
@@ -203,7 +251,9 @@
                            <div class="row">
                             <div class="col-md-12">
                                 <dl class="dl-horizontal list-tec">
-                                  <dt class="list-tec-dt" style="text-align: left;"><img src="public/img/multiusuario.png"></dt>
+                                  <dt class="list-tec-dt" style="text-align: left;">
+                                    <img src="public/img/multiusuario.png" class="tec-img">
+                                  </dt>
                                   <dd>
                                       <p>Multiusuário</p>
                                       <p>Vários profissionais podem utilizar o sistema ao mesmo tempo em um
@@ -216,7 +266,9 @@
                            <div class="row-fluid">
                             <div class="col-md-12">
                                 <dl class="dl-horizontal list-tec">
-                                  <dt class="list-tec-dt" style="text-align: left;"><img src="public/img/nuvem.png"></dt>
+                                  <dt class="list-tec-dt" style="text-align: left;">
+                                    <img src="public/img/nuvem.png" class="tec-img">
+                                  </dt>
                                   <dd>
                                       <p>Dados em nuvem</p>
                                       <p>Todas as informações são armazenadas em servidor remoto, sem correr risco de perda de dados.</p>
@@ -228,7 +280,9 @@
                            <div class="row-fluid">
                             <div class="col-md-12">
                                 <dl class="dl-horizontal list-tec">
-                                  <dt class="list-tec-dt" style="text-align: left;"><img src="public/img/responsivo.png"></dt>
+                                  <dt class="list-tec-dt" style="text-align: left;">
+                                    <img src="public/img/responsivo.png" class="tec-img">
+                                  </dt>
                                   <dd>
                                       <p>Responsivo</p>
                                       <p>Adapta-se ao tamanho do tel do dispositivo que você estiver 
@@ -274,8 +328,8 @@
                             <div class="col-md-12 col-sm-6">
                                 <dl class="list-tec">
                                   <dt class="list-tec-dt" style="text-align: left;">
-                                  	<img src="public/img/online.png">
-                                  	</dt>
+                                    <img src="public/img/online.png">
+                                    </dt>
                                   <dd>
                                       <p>Online</p>
                                       <p>Inteiramente Online, ou seja, não é preciso instalação.
@@ -334,544 +388,546 @@
 
     <!-- Funcionalidade de Gestão -->
 
-    <div class="row" style="margin-top: 4%;">	
-    	<div class="col-md-12">
-    		<h2 class="text-center font-custom1">
-    			<strong>Software para Salão de Beleza Completo</strong>
-    		</h2>
-    		<h3 class="text-center">
-    		Administre o dia a dia de seu salão de beleza com eficiência</h3>
-    	</div>
+    <div class="row" style="margin-top: 4%;"> 
+      <div class="col-md-12">
+        <h2 class="text-center font-custom1">
+          <strong>Software para Salão de Beleza Completo</strong>
+        </h2>
+        <h3 class="text-center">
+        Administre o dia a dia de seu salão de beleza com eficiência</h3>
+      </div>
     </div>
 
-<div class="container mg-tp-5">
-	<div class="row">
-		<div class="col-md-6">
-				
-		<div class="row">
-			<div class="col-md-10 col-md-offset-2 col-xs-12 col-xs-offset-0">
-				<dl class="sm-center">
-				
-				  <dt>
-				  	<img class="img-responsive-center" src="public/img/schedule.png" alt="">
-				  </dt>
+<div class="container mg-tp-5" id="gestao">
+  <div class="row">
+    <div class="col-md-6">
+        
+    <div class="row">
+      <div class="col-md-10 col-md-offset-2 col-xs-12 col-xs-offset-0">
+        <dl class="sm-center">
+        
+          <dt>
+            <img class="img-responsive-center" src="public/img/schedule.png" alt="">
+          </dt>
 
-				  <div class="gestao_text">
-				  <dd>
-				  	<p>
-				  		<strong>Agenda</strong>
-				  	</p>
-				  	<p class="sft-desc">
-				  		Com o programa para salão você faz agendamentos e muda horários de maneira simples, apenas arrastando para o horário desejado. Cada profissional pode acessar sua própria agenda de seu próprio celular. Crie recorrências, bloqueios, encaixes e notificações sobre seus clientes e muitas outras funções.
-				  	</p>
-				  </dd>
-				  </div>
-				</dl>
-			</div>
-		</div>
+          <div class="gestao_text">
+          <dd>
+            <p>
+              <strong>Agenda</strong>
+            </p>
+            <p class="sft-desc">
+              Com o programa para salão você faz agendamentos e muda horários de maneira simples, apenas arrastando para o horário desejado. Cada profissional pode acessar sua própria agenda de seu próprio celular. Crie recorrências, bloqueios, encaixes e notificações sobre seus clientes e muitas outras funções.
+            </p>
+          </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
 
-		<div class="row mg-tp-10">
-			<div class="col-md-10 col-md-offset-2 col-xs-12 col-xs-offset-0">
-				<dl class="sm-center">
-				
-				  <dt>
-				  	<img class="img-responsive-center" src="public/img/acessory.png" alt="">
-				  </dt>
+    <div class="row mg-tp-10">
+      <div class="col-md-10 col-md-offset-2 col-xs-12 col-xs-offset-0">
+        <dl class="sm-center">
+        
+          <dt>
+            <img class="img-responsive-center" src="public/img/acessory.png" alt="">
+          </dt>
 
-				  <div class="gestao_text">
-				  <dd>
-				  	<p>
-				  		<strong>Profissionais</strong>
-				  	</p>
-				  	<p class="sft-desc">
-				  		Personalize o perfil de cada profissional, fornecendo intervalos de agendamento de acordo com o tempo de cada um. Com um software para gestão de salão de beleza, é possível configurar comissões personalizadas, vincular assistentes a seus serviços na comanda e entender a eficiência de cada um através de relatórios.
-				  	</p>
-				  </dd>
-				  </div>
-				</dl>
-			</div>
-		</div>
+          <div class="gestao_text">
+          <dd>
+            <p>
+              <strong>Profissionais</strong>
+            </p>
+            <p class="sft-desc">
+              Personalize o perfil de cada profissional, fornecendo intervalos de agendamento de acordo com o tempo de cada um. Com um software para gestão de salão de beleza, é possível configurar comissões personalizadas, vincular assistentes a seus serviços na comanda e entender a eficiência de cada um através de relatórios.
+            </p>
+          </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
 
-			<div class="row mg-tp-10">
-			<div class="col-md-10 col-md-offset-2 col-xs-12 col-xs-offset-0">
-				<dl class="sm-center">
-				
-				  <dt>
-				  	<img class="img-responsive-center" src="public/img/clients.png" alt="">
-				  </dt>
+      <div class="row mg-tp-10">
+      <div class="col-md-10 col-md-offset-2 col-xs-12 col-xs-offset-0">
+        <dl class="sm-center">
+        
+          <dt>
+            <img class="img-responsive-center" src="public/img/clients.png" alt="">
+          </dt>
 
-				  <div class="gestao_text">
-				  <dd>
-				  	<p>
-				  		<strong>Clientes</strong>
-				  	</p>
-				  	<p class="sft-desc">
-				  		Através do software para salão você consegue cadastrar seus clientes incluindo anamnese e informações para marketing. Crie notificações para cada cliente que pode ser disparada em agendamento ou comanda. Entenda que são seus clientes mais fiéis e lucrativos através de relatórios. Ofereça lembretes e promoções por SMS e e-mail.
-				  	</p>
-				  </dd>
-				  </div>
-				</dl>
-			</div>
-		</div>
+          <div class="gestao_text">
+          <dd>
+            <p>
+              <strong>Clientes</strong>
+            </p>
+            <p class="sft-desc">
+              Através do software para salão você consegue cadastrar seus clientes incluindo anamnese e informações para marketing. Crie notificações para cada cliente que pode ser disparada em agendamento ou comanda. Entenda que são seus clientes mais fiéis e lucrativos através de relatórios. Ofereça lembretes e promoções por SMS e e-mail.
+            </p>
+          </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
 
-		</div>
+    </div>
 
-		<div class="col-md-6">
-				<div class="row">
-					<div class="col-md-12">
-						<dl class="sm-center">
-						
-						  <dt>
-						  	<img class="img-responsive-center" src="public/img/money.png" alt="">
-						  </dt>
+    <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-12">
+            <dl class="sm-center">
+            
+              <dt>
+                <img class="img-responsive-center" src="public/img/money.png" alt="">
+              </dt>
 
-						  <div class="gestao_text">
-						  <dd>
-						  	<p>
-						  		<strong>Financeiro</strong>
-						  	</p>
-						  	<p class="sft-desc">
-						  		Tenha controle de comandas, de seus ganhos e gastos. Calcule comissões de maneira rápida e simples levando em conta custos, taxas e prazo de cartão de crédito. Gere recibos, notas fiscais, organize contas e fornecedores. Tenha total controle de caixas, entradas e saídas por funcionários através do nosso software para salão de beleza.
-						  	</p>
-						  </dd>
-						  </div>
-						</dl>
-					</div>
-				</div>
+              <div class="gestao_text">
+              <dd>
+                <p>
+                  <strong>Financeiro</strong>
+                </p>
+                <p class="sft-desc">
+                  Tenha controle de comandas, de seus ganhos e gastos. Calcule comissões de maneira rápida e simples levando em conta custos, taxas e prazo de cartão de crédito. Gere recibos, notas fiscais, organize contas e fornecedores. Tenha total controle de caixas, entradas e saídas por funcionários através do nosso software para salão de beleza.
+                </p>
+              </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
 
 
-				<div class="row mg-tp-9">
-					<div class="col-md-12">
-						<dl class="sm-center">
-						
-						  <dt>
-						  	<img class="img-responsive-center" src="public/img/estoque.png" alt="">
-						  </dt>
+        <div class="row mg-tp-9">
+          <div class="col-md-12">
+            <dl class="sm-center">
+            
+              <dt>
+                <img class="img-responsive-center" src="public/img/estoque.png" alt="">
+              </dt>
 
-						  <div class="gestao_text">
-						  <dd>
-						  	<p>
-						  		<strong>Estoque</strong>
-						  	</p>
-						  	<p class="sft-desc">
-						  		Tenha um controle de estoque para venda e uso interno utilizando medidas específicas como dose e ml com o programa para salão. Controle automático de venda ou uso direto na comanda. Aviso de estoque baixo, possibilidade de configurar comissão por venda ou desconto por uso pessoal.
-						  	</p>
-						  </dd>
-						  </div>
-						</dl>
-					</div>
-				</div>
+              <div class="gestao_text">
+              <dd>
+                <p>
+                  <strong>Estoque</strong>
+                </p>
+                <p class="sft-desc">
+                  Tenha um controle de estoque para venda e uso interno utilizando medidas específicas como dose e ml com o programa para salão. Controle automático de venda ou uso direto na comanda. Aviso de estoque baixo, possibilidade de configurar comissão por venda ou desconto por uso pessoal.
+                </p>
+              </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
 
-					<div class="row" style="margin-top: 12%;">
-						<div class="col-md-12">
-							<dl class="sm-center">
-							
-							  <dt class="">
-							  	<img class="img-responsive-center" src="public/img/relatorio.png" 
-							  	alt="">
-							  </dt>
+          <div class="row" style="margin-top: 12%;">
+            <div class="col-md-12">
+              <dl class="sm-center">
+              
+                <dt class="">
+                  <img class="img-responsive-center" src="public/img/relatorio.png" alt="">
+                </dt>
 
-							  <div class="gestao_text">
-							  <dd>
-							  	<p>
-							  		<strong>Relatórios</strong>
-							  	</p>
-							  	<p class="sft-desc">
-							  		Entenda todos os aspectos de seu negócio como ticket médio por cliente, eficiência de seus profissionais, faltas, dívidas, gastos, cruzamento de informação que precisa e ainda pode solicitar um relatório customizado, tudo isso através do nosso programa para salão de beleza.
-							  	</p>
-							  </dd>
-							  </div>
-							</dl>
-						</div>
-				</div>
+                <div class="gestao_text">
+                <dd>
+                  <p>
+                    <strong>Relatórios</strong>
+                  </p>
+                  <p class="sft-desc">
+                    Entenda todos os aspectos de seu negócio como ticket médio por cliente, eficiência de seus profissionais, faltas, dívidas, gastos, cruzamento de informação que precisa e ainda pode solicitar um relatório customizado, tudo isso através do nosso programa para salão de beleza.
+                  </p>
+                </dd>
+                </div>
+              </dl>
+            </div>
+        </div>
 
-		</div>
-	</div>
+    </div>
+  </div>
 </div>
 
 <div class="row mg-tp-5">
-	<div class="col-md-12">
-		<h2 class="text-center font-custom1">
-			<strong>Telas do Sistema</string>
-		</h2>
-		<h3 class="text-center font-custom2">Visualmente intuitivo e fácil de usar.</h3>
-	</div>			
+  <div class="col-md-12">
+    <h2 class="text-center font-custom1">
+      <strong>Melhor programa para salão de beleza</strong></h2>
+      <strong><h3 class="text-center font-custom2">Visualmente intuitivo e fácil de usar.</h3></strong>
+  </div>
 </div>
 
-<div class="container mg-tp-3" id="#carousel_area">
-	<div class="row">
-		<div class="col-md-12">
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				  </ol>
+<div class="container mg-tp-3" id="carousel_area">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
 
-					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner" role="listbox">
-					    <div class="item active">
-					      <img src="public/img/carousel/item1.png" style="width:100%"; alt="">
-					    </div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="public/img/carousel/item1.png" style="width:100%" ;="" alt="">
+              </div>
 
-					     <!-- <div class="item">
-					      <img src="public/img/carousel/item2.png" style="width:100%"; alt="">
-					    </div> -->
-					   
-					  </div>
+               <!-- <div class="item">
+                <img src="public/img/carousel/item2.png" style="width:100%"; alt="">
+              </div> -->
+             
+            </div>
 
-  						<!-- Controls -->
-					  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					    <span class="sr-only">Previous</span>
-					  </a>
-					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					    <span class="sr-only">Next</span>
-					  </a>
-			</div>
-		</div>
-	</div>
+              <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="container-fluid relation-marketing mg-tp-8">
-	<div class="row">
-		<div class="col-md-12">
-		<!-- Icones e Bg Black transparente -->
-			<div class="row">
-				<div class="col-md-7" id="transparent-bg-black">
-					<!-- Textos -->
-					<div class="row">
-						<div class="col-md-12">
-							<h2 class="text-center">Relacionamento e Marketing</h2>
-							<h3 class="text-center">Ferramentas para se relacionar melhor com seu cliente
-							e aumentar a movimentação</h3>
-						</div>
-					</div>
+  <div class="row">
+    <div class="col-md-12">
+    <!-- Icones e Bg Black transparente -->
+      <div class="row">
+        <div class="col-md-7" id="transparent-bg-black">
+          <!-- Textos -->
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="text-center">Relacionamento e Marketing</h2>
+              <h3 class="text-center">Ferramentas para se relacionar melhor com seu cliente
+              e aumentar a movimentação</h3>
+            </div>
+          </div>
 
-					<div class="row mkt-row mg-tp-5">
-						<div class="col-md-12">
-							<dl class="dl-horizontal">
-							  <dt><img class="mkt-img" src="public/img/clock.png" alt=""></dt>
-							  <dd>
-							  	<p>Agendamento Online</p>
-							  	<p>Clientes podem agendar serviços a qualquer hora através
-							  	do portal ou app SalãoVIP.</p>
-							  </dd>
-							</dl>
-						</div>
-					</div>
+          <div class="row mkt-row mg-tp-5">
+            <div class="col-md-12">
+              <dl class="dl-horizontal">
+                <dt><img class="mkt-img" src="public/img/clock.png" alt=""></dt>
+                <dd>
+                  <p>Agendamento Online</p>
+                  <p>Clientes podem agendar serviços a qualquer hora através
+                  do portal ou app SalãoVIP.</p>
+                </dd>
+              </dl>
+            </div>
+          </div>
 
-					<div class="row mkt-row mg-tp-5">
-						<div class="col-md-12">
-							<dl class="dl-horizontal">
-							  <dt><img class="mkt-img" src="public/img/sms.png" alt=""></dt>
-							  <dd>
-							  	<p>Lembrete SMS</p>
-							  	<p>No dia do agendamento, o cliente recebe um lembrete via SMS
-							  	para que não se esqueça do compromisso.</p>
-							  </dd>
-							</dl>
-						</div>
-					</div>
+          <div class="row mkt-row mg-tp-5">
+            <div class="col-md-12">
+              <dl class="dl-horizontal">
+                <dt><img class="mkt-img" src="public/img/sms.png" alt=""></dt>
+                <dd>
+                  <p>Lembrete SMS</p>
+                  <p>No dia do agendamento, o cliente recebe um lembrete via SMS
+                  para que não se esqueça do compromisso.</p>
+                </dd>
+              </dl>
+            </div>
+          </div>
 
-					<div class="row mkt-row mg-tp-5">
-						<div class="col-md-12">
-							<dl class="dl-horizontal">
-							  <dt><img class="mkt-img" src="public/img/pacotes.png" alt=""></dt>
-							  <dd>
-							  	<p>Pacotes</p>
-							  	<p>Crie e administre pacotes de serviços garantindo a venda
-							  	 antecipada e melhorando a movimentação do salão.</p>
-							  </dd>
-							</dl>
-						</div>
-					</div>
+          <div class="row mkt-row mg-tp-5">
+            <div class="col-md-12">
+              <dl class="dl-horizontal">
+                <dt><img class="mkt-img" src="public/img/pacotes.png" alt=""></dt>
+                <dd>
+                  <p>Pacotes</p>
+                  <p>Crie e administre pacotes de serviços garantindo a venda
+                   antecipada e melhorando a movimentação do salão.</p>
+                </dd>
+              </dl>
+            </div>
+          </div>
 
-					<div class="row mkt-row mg-tp-5">
-						<div class="col-md-12">
-							<dl class="dl-horizontal">
-							  <dt><img class="mkt-img" src="public/img/campanhas.png" alt=""></dt>
-							  <dd>
-							  	<p>Campanhas</p>
-							  	<p>Comunique seus clientes de promoções, eventos e novidades através de campanhas de e-mail e SMS.</p>
-							  </dd>
-							</dl>
-						</div>
-					</div>
+          <div class="row mkt-row mg-tp-5">
+            <div class="col-md-12">
+              <dl class="dl-horizontal">
+                <dt><img class="mkt-img" src="public/img/campanhas.png" alt=""></dt>
+                <dd>
+                  <p>Campanhas</p>
+                  <p>Comunique seus clientes de promoções, eventos e novidades através de campanhas de e-mail e SMS.</p>
+                </dd>
+              </dl>
+            </div>
+          </div>
 
-					<div class="row mkt-row mg-tp-5">
-						<div class="col-md-12">
-							<dl class="dl-horizontal">
-							  <dt><img class="mkt-img" src="public/img/vale.png" alt=""></dt>
-							  <dd>
-							  	<p>Vale presente</p>
-							  	<p>Gere vale presentes com valor desejado que vale como crédito
-							  	para utilização no salão.</p>
-							  </dd>
-							</dl>
-						</div>
-					</div>
+          <div class="row mkt-row mg-tp-5">
+            <div class="col-md-12">
+              <dl class="dl-horizontal">
+                <dt><img class="mkt-img" src="public/img/vale.png" alt=""></dt>
+                <dd>
+                  <p>Vale presente</p>
+                  <p>Gere vale presentes com valor desejado que vale como crédito
+                  para utilização no salão.</p>
+                </dd>
+              </dl>
+            </div>
+          </div>
 
 
-				</div>
-				<div class="col-md-5"></div>
-			</div>
-		</div>
-	</div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="container-fluid" style="background-color:#F0F0F0;">
-	<div class="row client-svip-text">
-		<div class="col-md-12">
-			<h2 class="text-center h2-config">
-				<strong>Clientes do Software SalãoVIP</strong>
-			</h2>
-			<h3 class="text-center h3-config">Administre o dia a dia de seu salão de beleza com eficiência.</h3>
-		</div>
-	</div>
-	<div class="row pd-tp-3">
-		<div class="col-md-6">
-			<div class="row">
-				<div class="col-md-9 col-md-offset-3">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe width="60%" height="200" src="https://www.youtube.com/embed/VUMf3dTjRmI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<dl class="mg-tp-3">
-						<dt>Jean</dt>
-						<dt style="font-weight: lighter;color:#000;">Plataforma Cabelo & Pele</dt>
-					</dl>
-				</div>
-			</div>
-		</div>	
+  <div class="row client-svip-text">
+    <div class="col-md-12">
+      <h2 class="text-center h2-config">
+        <strong>Clientes do Software SalãoVIP</strong>
+      </h2>
+      <h3 class="text-center h3-config">Administre o dia a dia de seu salão de beleza com eficiência.</h3>
+    </div>
+  </div>
+  <div class="row pd-tp-3">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-9 col-md-offset-3">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="60%" height="200" src="https://www.youtube.com/embed/VUMf3dTjRmI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+          </div>
+          <dl class="mg-tp-3">
+            <dt>Jean</dt>
+            <dt style="font-weight: lighter;color:#000;">Plataforma Cabelo &amp; Pele</dt>
+          </dl>
+        </div>
+      </div>
+    </div>  
 
-		<div class="col-md-6">
-			<div class="row">
-				<div class="col-md-9">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe width="60%" height="200" src="https://www.youtube.com/embed/YpTYjC8YVAA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="60%" height="200" src="https://www.youtube.com/embed/YpTYjC8YVAA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 
-						<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/VUMf3dTjRmI&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-					</div>
-					<dl class="mg-tp-3">
-						<dt>Rogério</dt>
-						<dt style="font-weight: lighter;color:#000;">Retrô Hair</dt>
-					</dl>
-				</div>
-			</div>
-		</div>
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/VUMf3dTjRmI&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+          <dl class="mg-tp-3">
+            <dt>Rogério</dt>
+            <dt style="font-weight: lighter;color:#000;">Retrô Hair</dt>
+          </dl>
+        </div>
+      </div>
+    </div>
 
-	</div>
+  </div>
 </div>
 
 
 <div class="row mg-tp-8">
-	<div class="col-md-12">
-		<h2 class="text-center h2-config line-height-config-desktop">
-			<strong>Preços</strong>
-		</h2>
-		<h3 class="text-center h3-config">Escolha o plano que mais se adequa à sua necessidade</h3>
-	</div>
+  <div class="col-md-12">
+    <h2 class="text-center h2-config line-height-config-desktop">
+      <strong>Preços</strong>
+    </h2>
+    <h3 class="text-center h3-config">Escolha o plano que mais se adequa à sua necessidade</h3>
+  </div>
 </div>
 
 <div class="container mg-tp-5 planos-container">
 <!-- DESKTOP -->
-	<div class="row text-center">
-		<div class="col-md-12  hidden-xs hidden-sm">
-			<button class="btn btn-default btn-custom-red" id="mensal">Pagamento Mensal</button>
-			<button class="btn btn-default btn-custom-red" id="semestral">Pagamento Semestral <br>
-				<strong>5% de desconto</strong>
-			</button>
-			<button class="btn btn-default btn-custom-red" id="anual">Pagamento Anual <br>
-				<strong>10% de desconto</strong>
-			</button>
-		</div>
-	</div>
-	<!-- MOBILE -->
+  <div class="row text-center">
+    <div class="col-md-12  hidden-xs hidden-sm">
+      <button class="btn btn-default btn-custom-red" id="mensal">Pagamento Mensal</button>
+      <button class="btn btn-default btn-custom-red" id="semestral">Pagamento Semestral <br>
+        <strong>5% de desconto</strong>
+      </button>
+      <button class="btn btn-default btn-custom-red" id="anual">Pagamento Anual <br>
+        <strong>10% de desconto</strong>
+      </button>
+    </div>
+  </div>
+  <!-- MOBILE -->
 
-	<div class="row text-center planos">
-		<div class="col-xs-4  visible-xs visible-sm">
-			<button class="btn btn-default btn-custom-red" id="mensal"> Mensal</button>
-		</div>
-		<div class="col-xs-4  visible-xs visible-sm">
-			<button class="btn btn-default btn-custom-red" id="semestral"> Semestral <br>
-				<strong>5% Off</strong>
-			</button>
-		</div>
-		<div class="col-xs-4  visible-xs visible-sm">
-			<button class="btn btn-default btn-custom-red" id="anual">Anual<br>
-				<strong>10% Off</strong>
-			</button>
-		</div>
-		</div>
-	</div>
-	<!-- MOBILE -->
+  <div class="row text-center planos" style="padding-bottom: 5%;">
+    <div class="col-xs-4  visible-xs visible-sm">
+      <button class="btn btn-default btn-custom-red" id="mensal"> Mensal</button>
+    </div>
+    <div class="col-xs-4  visible-xs visible-sm">
+      <button class="btn btn-default btn-custom-red" id="semestral"> Semestral <br>
+        <strong>5% Off</strong>
+      </button>
+    </div>
+    <div class="col-xs-4  visible-xs visible-sm">
+      <button class="btn btn-default btn-custom-red" id="anual">Anual<br>
+        <strong>10% Off</strong>
+      </button>
+    </div>
+    </div>
+  </div>
+  <!-- MOBILE -->
 
 
+  <div class="container prices">
+    <div class="row" style="padding-bottom: 7%;padding-top: 4%;">
+    <img src="public/img/line2.png" id="line">
+    <div id="line-bord" style=" border-top: 1px solid #25ab87;padding-bottom: 5%;"></div>
 
-	<div class="row pd-tp-7" style="padding-bottom: 2%;">
-		<div class="col-md-12" id="line">
-		</div>
-			<hr></hr>
+      <div class="col-md-3 col-xs-12 col-sm-6">
+          <div class="preco_full text-center">
+            <p>
+              <strong>até 5</strong><br>
+              funcionários
+            </p>
+            <p>
+              R$ <strong class="real">44,91</strong><br>
+              por mês*
+            </p>
 
-	</div>
+            <p>
+              <strong class="real" style="font-size: 18px">
+                *R$538,92
+              </strong> por ano <br>
+              (parcele em até 12X)
+            </p>
+          </div>
+        </div>
+        <!-- FIM ITEM 1 -->
+        <div class="col-md-3 col-xs-12 col-sm-6" style=" text-align: center;">
+          <div class="preco_full text-center">
+            <p>
+              <strong>6 a 15</strong><br>
+              funcionários
+            </p>
+            <p>
+              R$ <strong class="real">80,91</strong><br>
+              por mês*
+            </p>
 
-	<div class="row prices">
-				<div class="col-md-3 col-xs-6">
-					<div class="preco_full text-center">
-						<p>
-							<strong>até 5</strong><br>
-							funcionários
-						</p>
-						<p>
-							R$ <strong class="real">44,91</strong><br>
-							por mês*
-						</p>
+            <p>
+              <strong class="real" style="font-size: 18px">
+                *R$970,92
+              </strong> por ano <br>
+              (parcele em até 12X)
+            </p>
+          </div>
+        </div>
 
-						<p>
-							<strong class="real" style="font-size: 18px">
-								*R$538,92
-							</strong> por ano <br>
-							(parcele em até 12X)
-						</p>
-					</div>
-				</div>
-				<!-- FIM ITEM 1 -->
-				<div class="col-md-3 col-xs-6">
-					<div class="preco_full text-center">
-						<p>
-							<strong>6 a 15</strong><br>
-							funcionários
-						</p>
-						<p>
-							R$ <strong class="real">80,91</strong><br>
-							por mês*
-						</p>
+        <div class="col-md-3 col-xs-12 col-sm-6">
+          <div class="preco_full text-center">
+            <p>
+              <strong>16 a 30</strong><br>
+              funcionários
+            </p>
+            <p>
+              R$ <strong class="real">134,91</strong><br>
+              por mês*
+            </p>
 
-						<p>
-							<strong class="real" style="font-size: 18px">
-								*R$970,92
-							</strong> por ano <br>
-							(parcele em até 12X)
-						</p>
-					</div>
-				</div>
+            <p>
+              <strong class="real" style="font-size: 18px">
+                *R$1618,92
+              </strong> por ano <br>
+              (parcele em até 12X)
+            </p>
+          </div>
+        </div>
 
-				<div class="col-md-3 col-xs-6">
-					<div class="preco_full text-center">
-						<p>
-							<strong>16 a 30</strong><br>
-							funcionários
-						</p>
-						<p>
-							R$ <strong class="real">134,91</strong><br>
-							por mês*
-						</p>
+        <div class="col-md-3 col-xs-12 col-sm-6">
+          <div class="preco text-center">
+            <p>
+              <strong style="color: #000;">+ de 30</strong><br>
+              funcionários
+            </p>
+            <p>
+              R$ <strong class="real">4,00</strong><br>
+              por funcionário
+            </p>
 
-						<p>
-							<strong class="real" style="font-size: 18px">
-								*R$1618,92
-							</strong> por ano <br>
-							(parcele em até 12X)
-						</p>
-					</div>
-				</div>
+          </div>
+        </div>
 
-				<div class="col-md-3 col-xs-6">
-					<div class="preco text-center">
-						<p>
-							<strong style="color: #000;">+ de 30</strong><br>
-							funcionários
-						</p>
-						<p>
-							R$ <strong class="real">4,00</strong><br>
-							por funcionário
-						</p>
+  </div>
+  
 
-					</div>
-				</div>
-		</div>
+  </div>
 
-		<div class="row mg-tp-5 text-center">
-			<div class="col-md-12">
-				<a href="#" class="btn btn-default" id="trial">
-					Experimente Grátis por 10 dias
-				</a>
-			</div>
-		</div>
-	</div>
-</div>
+<!--  <div class=" prices container">
+          </div> -->
+
+    <div class="row mg-tp-5 text-center">
+      <div class="col-md-12">
+        <a href="#faixa1" class="btn btn-default ancora" id="trial">
+          Experimente Grátis por 10 dias
+        </a>
+      </div>
+    </div>
+  
+
 
 <div class="container-fluid mg-tp-12" id="footer">
-	<div class="row pd-tp-7">
-		<div class="col-md-7 col-sm-4">
-			<div class="row text-center">
-				<div class="col-md-12">
-					<h2>Tire suas dúvidas</h2>
-					<h3>Fale com nossos atendentes para tirar dúvidas sobre o
-					sistema e até mesmo fazer sua adesão. Utilize o chat no canto inferior
-					direito ou entre em contato por telefone.</h3><br>
-					<p>São Paulo: +55 (11) 4111-7586</p>
-				</div>
-			</div>
-		</div>
+  <div class="row pd-tp-7">
+    <div class="col-md-12 col-sm-4" id="resposive-resize1">
+      <div class="row text-center">
+        <div class="col-md-6 col-sm-6">
+          <h2>Tire suas dúvidas</h2>
+          <h3>Fale com nossos atendentes para tirar dúvidas sobre o
+          sistema e até mesmo fazer sua adesão. Utilize o chat no canto inferior
+          direito ou entre em contato por telefone.</h3><br>
+          <p>São Paulo: +55 (11) 4111-7586</p>
+        </div>
 
-		<div class="col-md-5 col-sm-8">
-			<img src="public/img/mensagem.png" id="mensagem_img" alt="">
-		</div>
+        <div class="col-md-6 col-sm-6" id="resposive-resize2">
+          <img src="public/img/mensagem.png" id="mensagem_img" alt="">
+        </div>
+      </div>
 
-	</div>
-	
-	<div class="row text-right mg-tp-5" id="footer2">
-		<div class="col-md-6 col-sm-6">
-			<p style="padding-top: 3%; padding-right: 0;margin-bottom: 0;">
-				SalãoVIP - Copyright <i class="fa fa-copyright" aria-hidden="true"></i>
-				todos os direitos reservados
-			</p>
-		</div>
+      
+    </div>
 
-		<div class="col-md-6 col-sm-6">
-			<ul class="list-inline" id="footer-list">
-				<li class="img-footer">
-					<a href="#" id="facebook">
-						<img src="public/img/fb.png">
-					</a>
-				</li>
-				<li class="img-footer mg-tp-list">
-					<a href="#" id="twitter">
-						<img src="public/img/twitter.png">
-					</a>
-				</li>
-				<li class="img-footer mg-tp-list">
-					<a href="#" id="google+">
-						<img src="public/img/google+.png">
-					</a>
-				</li>
-				<li class="img-footer mg-tp-list">
-					<a href="#" id="instagram">
-						<img src="public/img/instagram.png">
-					</a>
-				</li>
-				<li class="img-footer mg-tp-list">
-					<a href="#" id="linkedin">
-						<img src="public/img/linkedin.png">
-					</a>
-				</li>
-				<li class="img-footer mg-tp-list">
-					<a href="#" id="pinterest">
-						<img src="public/img/pinterest.png">
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+    
+
+  </div>
+  
+  <div class="row text-right mg-tp-5" id="footer2">
+    <div class="col-md-6 col-sm-6">
+      <p style="padding-top: 3%; padding-right: 0;margin-bottom: 0;">
+        SalãoVIP - Copyright <i class="fa fa-copyright" aria-hidden="true"></i>
+        todos os direitos reservados
+      </p>
+    </div>
+
+    <div class="col-md-6 col-sm-6">
+      <ul class="list-inline" id="footer-list">
+        <li class="img-footer">
+          <a href="https://www.facebook.com/SalaoVip" id="facebook">
+            <img src="public/img/fb.png">
+          </a>
+        </li>
+        <li class="img-footer mg-tp-list">
+          <a href="https://twitter.com/salaovipbrasil" id="twitter">
+            <img src="public/img/twitter.png">
+          </a>
+        </li>
+        <li class="img-footer mg-tp-list">
+          <a href="https://www.instagram.com/salaovip/" id="google+">
+            <img src="public/img/google+.png">
+          </a>
+        </li>
+        <li class="img-footer mg-tp-list">
+          <a href="https://plus.google.com/111657889329495362080" id="instagram">
+            <img src="public/img/instagram.png">
+          </a>
+        </li>
+        <li class="img-footer mg-tp-list">
+          <a href="https://www.linkedin.com/company/sal-ovip/" id="linkedin">
+            <img src="public/img/linkedin.png">
+          </a>
+        </li>
+        <li class="img-footer mg-tp-list">
+          <a href="http://www.pinterest.com/salaovip/" id="pinterest">
+            <img src="public/img/pinterest.png">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-  <script type="text/javascript" src="public/carousel/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="public/js/custom.js"></script>
-  <script type="text/javascript" src="public/bootstrap/js/bootstrap.js"></script>
-</body>
-</html>
+
+
+
+  </body></html>
