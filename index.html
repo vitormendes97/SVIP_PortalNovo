@@ -16,12 +16,12 @@
 
 </head>
 <body>
-<div class="menuVoador hidden-xs hidden-sm" style="position: fixed; width: 100%; background-color: rgb(255, 255, 255); z-index: 999999; top: 0px; border-bottom: 1px solid rgb(204, 204, 204); display: none;">
+<div class="menuVoador hidden-xs" style="position: fixed; width: 100%; background-color: rgb(255, 255, 255); z-index: 999999; top: 0px; border-bottom: 1px solid rgb(204, 204, 204); display: none;">
   <div class="container">
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-3">
     <img src="public/img/logo-escuro.png" class="logo">
   </div>
-  <div class="col-md-8">
+  <div class="col-md-8 col-sm-9">
     <ul class="list-inline menu1" style="
     margin-top: 10px;">
       <li>
@@ -45,7 +45,7 @@
 
   <div style="
     background: #0bb5b2;padding: 8px;
-    height: 46px;" id="gestao_menu">
+    height: 41px;" id="gestao_menu">
     <ul class="list-inline listaMenu" style="
     max-width: 800px;
     margin: 0 auto;">
@@ -54,18 +54,18 @@
         <a href="http://www.salaovip.com.br/programa/sistema-online-multiusuario" class="ativo">Sistema Online e Multiusuário</a></li>
         <li ><a href="http://www.salaovip.com.br/programa/agenda" class="">Agenda</a></li>
         <li><a href="http://www.salaovip.com.br/programa/profissionais" class="">Profissionais</a></li>
-        <li><a href="http://www.salaovip.com.br/programa/clientes" class="">clientes</a></li>
+        <li><a href="http://www.salaovip.com.br/programa/clientes" class="">Clientes</a></li>
         <li><a href="http://www.salaovip.com.br/programa/financeiro" class="">Financeiro</a></li>
         <li><a href="http://www.salaovip.com.br/programa/estoque" class="">Estoque</a></li>
         <li><a href="http://www.salaovip.com.br/programa/relatorios" class="">Relatórios</a></li>
-      
+
     </ul>
   </div>
 
   <div style="
     background: #e46367;padding: 8px;
-    height: 46px;" id="vendas_menu">
-    <ul class="list-inline listaMenu" style="
+    height: 41px;" id="vendas_menu">
+    <ul class="list-inline listaMenu " style="
     max-width: 800px;
     margin: 0 auto;">
 
@@ -75,24 +75,24 @@
         <li><a href="http://www.salaovip.com.br/programa/clientes" class="">Vale Presente</a></li>
         <li><a href="http://www.salaovip.com.br/programa/financeiro" class="">Promoções</a></li>
         <li><a href="http://www.salaovip.com.br/programa/estoque" class="">Recomendações</a></li>
-        
-      
+
+
     </ul>
   </div>
-  
+
   </div>
-  
+
 
 <header style="
     border-bottom: 1px solid #ccc;
 ">
-      
+
   <nav class="container navbar navbar-default" style="
     margin-bottom: 0px;
     border: none;
 ">
-  
-  
+
+
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -108,36 +108,62 @@
 
     <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li> <a href="#">Já sou cliente 
+        <li class="border-white"> <a href="#">Já sou cliente
         <span class="sr-only">(current)</span></a></li>
-        
-        <li>
+        <li class="border-white">
             <a href="#" id="navbar-text-red">
                     Experimente
          </a>
         </li>
-       <li class="dropdown">
+       <li class="dropdown border-white visible-xs">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Melhorar Gestão <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Melhorar Gestão</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+          <ul class="dropdown-menu gestao-menu-mobile">
+            <li><a href="#">Sistema Online  E multiusuario</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">Agenda</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#">Profissional</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Clientes</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Financeiro</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Estoque</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Relatórios</a></li>
           </ul>
         </li>
+
+          <li class="dropdown border-white visible-xs">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aumente Suas Vendas <span class="caret"></span></a>
+          <ul class="dropdown-menu vendas-menu-mobile">
+            <li><a href="#">SMS Marketing</a></li>
+             <li role="separator" class="divider"></li>
+            <li><a href="#">E-mail Marketing</a></li>
+             <li role="separator" class="divider"></li>
+            <li><a href="#">Divulgação Online</a></li>
+             <li role="separator" class="divider"></li>
+            <li><a href="#">Vale Presente</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Promoções</a></li>
+             <li role="separator" class="divider"></li>
+            <li><a href="#">Recomendações</a></li>
+          </ul>
+        </li>
+
+        <li class="border-white visible-xs"><a href="#">Recomendações</a></li>
+        <li class="border-white visible-xs"><a href="#">Preços</a></li>
+
       </ul>
-    
+
     </div>
 
-  
+
   </nav>
 
-  
-  
-  
+
+
+
 </header>
   <div class="container container-yt">
     <div class="row">
@@ -204,7 +230,7 @@
 
         </form>
 
-        
+
 
       </div>
     </div>
@@ -285,7 +311,7 @@
                                   </dt>
                                   <dd>
                                       <p>Responsivo</p>
-                                      <p>Adapta-se ao tamanho do tel do dispositivo que você estiver 
+                                      <p>Adapta-se ao tamanho do tel do dispositivo que você estiver
                                       utilizando sem perder funcionalidade.</p>
                                   </dd>
                                 </dl>
@@ -296,15 +322,15 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <!-- FIM TECNOLOGIA -->
 <!-- <div class="container-fluid visible-sm hidden-xs hidden-lg hidden-md" id="tec">
         <div class="row">
             <div class="col-md-10">
                 <div class="row">
-               
+
                     <div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-1">
-                        <img id="finger" 
+                        <img id="finger"
                             src="public/img/finger.png"
                             alt="">
                     </div>
@@ -313,13 +339,13 @@
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
                                 <h2>Tecnologia</h2>
-                               
+
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-12 col-sm-12 agroup-text">
-                              
+
                                 <h3>Fácil e intuitivo, o programa SalãoVIP está sempre inovando.</h3>
                             </div>
                         </div>
@@ -348,11 +374,11 @@
                                   </dd>
                                 </dl>
                             </div>
-                        
+
 
                         </div>
-                           
-                          
+
+
 
                            <div class="row-fluid">
                             <div class="col-md-12">
@@ -372,7 +398,7 @@
                                   <dt class="list-tec-dt" style="text-align: left;"><img src="public/img/responsivo.png"></dt>
                                   <dd>
                                       <p>Responsivo</p>
-                                      <p>Adapta-se ao tamanho do tel do dispositivo que você estiver 
+                                      <p>Adapta-se ao tamanho do tel do dispositivo que você estiver
                                       utilizando sem perder funcionalidade.</p>
                                   </dd>
                                 </dl>
@@ -388,7 +414,7 @@
 
     <!-- Funcionalidade de Gestão -->
 
-    <div class="row" style="margin-top: 4%;"> 
+    <div class="row" style="margin-top: 4%;">
       <div class="col-md-12">
         <h2 class="text-center font-custom1">
           <strong>Software para Salão de Beleza Completo</strong>
@@ -401,11 +427,11 @@
 <div class="container mg-tp-5" id="gestao">
   <div class="row">
     <div class="col-md-6">
-        
+
     <div class="row">
       <div class="col-md-10 col-md-offset-2 col-xs-12 col-xs-offset-0">
         <dl class="sm-center">
-        
+
           <dt>
             <img class="img-responsive-center" src="public/img/schedule.png" alt="">
           </dt>
@@ -427,7 +453,7 @@
     <div class="row mg-tp-10">
       <div class="col-md-10 col-md-offset-2 col-xs-12 col-xs-offset-0">
         <dl class="sm-center">
-        
+
           <dt>
             <img class="img-responsive-center" src="public/img/acessory.png" alt="">
           </dt>
@@ -449,7 +475,7 @@
       <div class="row mg-tp-10">
       <div class="col-md-10 col-md-offset-2 col-xs-12 col-xs-offset-0">
         <dl class="sm-center">
-        
+
           <dt>
             <img class="img-responsive-center" src="public/img/clients.png" alt="">
           </dt>
@@ -474,7 +500,7 @@
         <div class="row">
           <div class="col-md-12">
             <dl class="sm-center">
-            
+
               <dt>
                 <img class="img-responsive-center" src="public/img/money.png" alt="">
               </dt>
@@ -497,7 +523,7 @@
         <div class="row mg-tp-9">
           <div class="col-md-12">
             <dl class="sm-center">
-            
+
               <dt>
                 <img class="img-responsive-center" src="public/img/estoque.png" alt="">
               </dt>
@@ -519,7 +545,7 @@
           <div class="row" style="margin-top: 12%;">
             <div class="col-md-12">
               <dl class="sm-center">
-              
+
                 <dt class="">
                   <img class="img-responsive-center" src="public/img/relatorio.png" alt="">
                 </dt>
@@ -567,10 +593,18 @@
                 <img src="public/img/carousel/item1.png" style="width:100%" ;="" alt="">
               </div>
 
-               <!-- <div class="item">
-                <img src="public/img/carousel/item2.png" style="width:100%"; alt="">
-              </div> -->
-             
+               <div class="item">
+                <img src="public/img/carousel/promocao.jpg" style="width:100%"; alt="">
+              </div>
+
+              <div class="item">
+               <img src="public/img/carousel/comissao.jpg" style="width:100%"; alt="">
+              </div>
+
+              <div class="item">
+               <img src="public/img/carousel/comandas.jpg" style="width:100%"; alt="">
+              </div>
+
             </div>
 
               <!-- Controls -->
@@ -696,7 +730,7 @@
           </dl>
         </div>
       </div>
-    </div>  
+    </div>
 
     <div class="col-md-6">
       <div class="row">
@@ -742,7 +776,7 @@
   </div>
   <!-- MOBILE -->
 
-  <div class="row text-center planos" style="padding-bottom: 5%;">
+  <div class="row text-center planos" style="padding-bottom: 3%;">
     <div class="col-xs-4  visible-xs visible-sm">
       <button class="btn btn-default btn-custom-red" id="mensal"> Mensal</button>
     </div>
@@ -762,11 +796,11 @@
 
 
   <div class="container prices">
-    <div class="row" style="padding-bottom: 7%;padding-top: 4%;">
+    <div class="row">
     <img src="public/img/line2.png" id="line">
     <div id="line-bord" style=" border-top: 1px solid #25ab87;padding-bottom: 5%;"></div>
 
-      <div class="col-md-3 col-xs-12 col-sm-6">
+      <div class="col-md-3 col-xs-12 col-sm-3">
           <div class="preco_full text-center">
             <p>
               <strong>até 5</strong><br>
@@ -786,7 +820,7 @@
           </div>
         </div>
         <!-- FIM ITEM 1 -->
-        <div class="col-md-3 col-xs-12 col-sm-6" style=" text-align: center;">
+        <div class="col-md-3 col-xs-12 col-sm-3" style=" text-align: center;">
           <div class="preco_full text-center">
             <p>
               <strong>6 a 15</strong><br>
@@ -806,7 +840,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 col-xs-12 col-sm-6">
+        <div class="col-md-3 col-xs-12 col-sm-3">
           <div class="preco_full text-center">
             <p>
               <strong>16 a 30</strong><br>
@@ -826,7 +860,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 col-xs-12 col-sm-6">
+        <div class="col-md-3 col-xs-12 col-sm-3">
           <div class="preco text-center">
             <p>
               <strong style="color: #000;">+ de 30</strong><br>
@@ -841,32 +875,34 @@
         </div>
 
   </div>
-  
+
 
   </div>
 
 <!--  <div class=" prices container">
           </div> -->
 
-    <div class="row mg-tp-5 text-center">
+    <div class="row text-center">
       <div class="col-md-12">
         <a href="#faixa1" class="btn btn-default ancora" id="trial">
           Experimente Grátis por 10 dias
         </a>
       </div>
     </div>
-  
 
 
-<div class="container-fluid mg-tp-12" id="footer">
+
+<div class="container-fluid " id="footer" style="margin-top: 6%;">
   <div class="row pd-tp-7">
     <div class="col-md-12 col-sm-4" id="resposive-resize1">
       <div class="row text-center">
         <div class="col-md-6 col-sm-6">
           <h2>Tire suas dúvidas</h2>
-          <h3>Fale com nossos atendentes para tirar dúvidas sobre o
+           <div>
+              <h3>Fale com nossos atendentes para tirar dúvidas sobre o
           sistema e até mesmo fazer sua adesão. Utilize o chat no canto inferior
-          direito ou entre em contato por telefone.</h3><br>
+          direito ou entre em contato por telefone.</h3>
+           </div><br>
           <p>São Paulo: +55 (11) 4111-7586</p>
         </div>
 
@@ -875,13 +911,13 @@
         </div>
       </div>
 
-      
+
     </div>
 
-    
+
 
   </div>
-  
+
   <div class="row text-right mg-tp-5" id="footer2">
     <div class="col-md-6 col-sm-6">
       <p style="padding-top: 3%; padding-right: 0;margin-bottom: 0;">
