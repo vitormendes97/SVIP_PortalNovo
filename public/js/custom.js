@@ -1,7 +1,6 @@
 $(document).ready(function(){
-	removeElementClassResponsivo(".list-tec-dt","list-tec-dt");
+	   removeElementClassResponsivo(".list-tec-dt","list-tec-dt");
       removeElementClassResponsivo("");
-	carousel();
       setSetaPosition();
       resizeForIpadMini();
 
@@ -22,6 +21,8 @@ $(document).ready(function(){
       });
 
        OpenOptios();
+
+     
 });
 
 
@@ -35,30 +36,14 @@ function removeElementClassResponsivo(elemento,classe){
 
 }
 
-function carousel() {
-	  $("#owl-demo").owlCarousel({
-
-      navigation : true, // Show next and prev buttons
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true
-
-      // "singleItem:true" is a shortcut for:
-      // items : 1,
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
-
-  });
-}
-
 
 function setSetaPosition (){
       var mensal = $("#mensal");
       var semestral = $("#semestral");
       var anual = $("#anual");
 
+
+  if($(window).width() <= 1350){
       mensal.on("click",function(){
             var p = $( "#mensal" );
             var offset = p.offset();
@@ -72,7 +57,7 @@ function setSetaPosition (){
             // $('#line').css('left',offset.left-600);
 
             $("#line").fadeIn("slow");
-              $('#line').css('left',offset.left-140);
+            $('#line').css('left',offset.left-140);
       });
 
 
@@ -80,7 +65,12 @@ function setSetaPosition (){
             var p = $( "#anual" );
             var offset = p.offset();
             $('#line').css('left',offset.left-140);
-      });
+      }); 
+  }
+  else{
+    $('#line').css('display','none');
+  }
+      
 }
 
 

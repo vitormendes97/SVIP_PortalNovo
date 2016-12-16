@@ -1,17 +1,16 @@
 <html><head>
-  <title>SalãoVIP</title>
+  <title>Programa para Salão de Beleza - SalãoVIP</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="public/fontawsome/css/font-awesome.css">
-  <link rel="stylesheet" type="text/css" href="public/carousel/owl.carousel.css">
-  <link rel="stylesheet" type="text/css" href="public/css/estilo.min.css">
+  <meta name="description" content="Programa para salão de beleza que te ajuda a administrar o seu salão. Faça agendamentos online, comanda, calculo de comissões e muito mais. Conheça o SalãoVIP.">
+  <link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="public/fontawsome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="public/css/estilo.css">
 
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="public/carousel/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="public/js/custom.min.js"></script>
-  <script type="text/javascript" src="public/bootstrap/js/bootstrap.js"></script>
+  <script type="text/javascript" src="public/js/custom.js"></script>
+  <script type="text/javascript" src="public/bootstrap/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -189,28 +188,28 @@
         </div>
         <form id="salon">
           <div class="row">
-            <div class="col-md-12">
-              <input type="text" name="" placeholder="Nome do Estabelecimento" class="form-control">
+            <div class="col-md-8 col-md-offset-2">
+              <input type="text" name="estabelecimento" placeholder="Nome do Estabelecimento" class="form-control">
             </div>
           </div>
 
           <div class="row">
-            <div class="col-md-12">
-              <input type="text" name="" placeholder="Nome do responsável" class="form-control">
-            </div>
-          </div>
-
-
-          <div class="row">
-            <div class="col-md-12">
-              <input type="text" name="" placeholder="Email" class="form-control">
+            <div class="col-md-8 col-md-offset-2">
+              <input type="text" name="responsavel" placeholder="Nome do responsável" class="form-control">
             </div>
           </div>
 
 
           <div class="row">
-            <div class="col-md-12">
-              <input type="text" name="" placeholder="Celular" class="form-control centered">
+            <div class="col-md-8 col-md-offset-2">
+              <input type="text" name="email" placeholder="Email" class="form-control">
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <input type="text" name="celular" placeholder="Celular" class="form-control centered">
             </div>
           </div>
 
@@ -223,10 +222,16 @@
           </div>
 
           <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-8 col-md-offset-2">
                 <button type="submit" class="btn btn-default item-centralize" id="btn-now">
                 Comece Agora!</button>
               </div>
+          </div>
+
+          <div class="col-md-8 col-md-offset-2" style="color:#000;">
+            <p>Ao se cadastrar você concorda com os <a href="#">Termos de Uso</a>
+            do SalãoVIP
+            </p>
           </div>
 
         </form>
@@ -290,7 +295,7 @@
                             </div>
                         </div>
 
-                           <div class="row-fluid">
+                           <div class="row">
                             <div class="col-md-12">
                                 <dl class="dl-horizontal list-tec">
                                   <dt class="list-tec-dt" style="text-align: left;">
@@ -329,160 +334,146 @@
 
     <!-- Funcionalidade de Gestão -->
 
-    <div class="" style="margin-top: 4%;">
+    
+    <div class="item-spacing">
       <div class="col-md-12">
         <h2 class="text-center font-custom1">
           <strong>Software para Salão de Beleza Completo</strong>
         </h2>
-        <h3 class="text-center">
+        <h3 class="text-center" style="color:#000;">
         Administre o dia a dia de seu salão de beleza com eficiência</h3>
       </div>
     </div>
 
-<div class="container mg-tp-5" id="gestao">
-  <div class="row">
-    <div class="col-md-6">
 
-    <div class="row">
-      <div class="col-md-10 col-md-offset-2 col-xs-12 col-xs-offset-0">
-        <dl class="sm-center">
-
-          <dt>
-            <img class="img-responsive-center" src="public/img/schedule.png" alt="">
-          </dt>
-
-          <div class="gestao_text">
-          <dd>
-            <p>
-              <strong>Agenda</strong>
-            </p>
-            <p class="sft-desc">
-              Com o programa para salão você faz agendamentos e muda horários de maneira simples, apenas arrastando para o horário desejado. Cada profissional pode acessar sua própria agenda de seu próprio celular. Crie recorrências, bloqueios, encaixes e notificações sobre seus clientes e muitas outras funções.
-            </p>
-          </dd>
-          </div>
-        </dl>
-      </div>
-    </div>
-
-    <div class="row mg-tp-10">
-      <div class="col-md-10 col-md-offset-2 col-xs-12 col-xs-offset-0">
-        <dl class="sm-center">
-
-          <dt>
-            <img class="img-responsive-center" src="public/img/acessory.png" alt="">
-          </dt>
-
-          <div class="gestao_text">
-          <dd>
-            <p>
-              <strong>Profissionais</strong>
-            </p>
-            <p class="sft-desc">
-              Personalize o perfil de cada profissional, fornecendo intervalos de agendamento de acordo com o tempo de cada um. Com um software para gestão de salão de beleza, é possível configurar comissões personalizadas, vincular assistentes a seus serviços na comanda e entender a eficiência de cada um através de relatórios.
-            </p>
-          </dd>
-          </div>
-        </dl>
-      </div>
-    </div>
-
-      <div class="row mg-tp-10">
-      <div class="col-md-10 col-md-offset-2 col-xs-12 col-xs-offset-0">
-        <dl class="sm-center">
-
-          <dt>
-            <img class="img-responsive-center" src="public/img/clients.png" alt="">
-          </dt>
-
-          <div class="gestao_text">
-          <dd>
-            <p>
-              <strong>Clientes</strong>
-            </p>
-            <p class="sft-desc">
-              Através do software para salão você consegue cadastrar seus clientes incluindo anamnese e informações para marketing. Crie notificações para cada cliente que pode ser disparada em agendamento ou comanda. Entenda que são seus clientes mais fiéis e lucrativos através de relatórios. Ofereça lembretes e promoções por SMS e e-mail.
-            </p>
-          </dd>
-          </div>
-        </dl>
-      </div>
-    </div>
-
-    </div>
-
-    <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-12">
+ <div class="container">
+      <div class="col-md-10 col-md-offset-1">
+       <div class="col-md-6 funcinalidades_gestao">
+       
             <dl class="sm-center">
-
+      
               <dt>
-                <img class="img-responsive-center" src="public/img/money.png" alt="">
+                <img class="img-responsive-center" src="public/img/schedule.png" alt="">
               </dt>
 
-              <div class="gestao_text">
+              
               <dd>
-                <p>
-                  <strong>Financeiro</strong>
+                <p class="gestaop1 xs-center">
+                  <strong>Agenda</strong>
                 </p>
-                <p class="sft-desc">
-                  Tenha controle de comandas, de seus ganhos e gastos. Calcule comissões de maneira rápida e simples levando em conta custos, taxas e prazo de cartão de crédito. Gere recibos, notas fiscais, organize contas e fornecedores. Tenha total controle de caixas, entradas e saídas por funcionários através do nosso software para salão de beleza.
+                <p class="text-justify-mobile">
+                  Com o programa para salão você faz agendamentos e muda horários de maneira simples, apenas arrastando para o horário desejado. Cada profissional pode acessar sua própria agenda de seu próprio celular. Crie recorrências, bloqueios, encaixes e notificações sobre seus clientes e muitas outras funções.
                 </p>
               </dd>
-              </div>
             </dl>
-          </div>
+          
+       </div>
+       <div class="col-md-6 funcinalidades_gestao">
+        
+                <dl class="sm-center">
+
+                  <dt>
+                    <img class="img-responsive-center" src="public/img/money.png" alt="">
+                  </dt>
+
+                  
+                  <dd>
+                    <p class="gestaop1 xs-center">
+                      <strong>Financeiro</strong>
+                    </p>
+                    <p class="text-justify-mobile">
+                      Tenha controle de comandas, de seus ganhos e gastos. Calcule comissões de maneira rápida e simples levando em conta custos, taxas e prazo de cartão de crédito. Gere recibos, notas fiscais, organize contas e fornecedores. Tenha total controle de caixas, entradas e saídas por funcionários através do nosso software para salão de beleza.
+                    </p>
+                  </dd>
+                 
+                </dl>
+          
         </div>
 
+        <div class="col-md-6 funcinalidades_gestao">
+         
+              <dl class="sm-center">
 
-        <div class="row mg-tp-9">
-          <div class="col-md-12">
+                <dt>
+                  <img class="img-responsive-center" src="public/img/acessory.png" alt="">
+                </dt>
+                <dd>
+                  <p class="gestaop1 xs-center">
+                    <strong>Profissionais</strong>
+                  </p>
+                  <p class="text-justify-mobile">
+                   Personalize o perfil de cada profissional, fornecendo intervalos de agendamento de acordo com o tempo de cada um. Com um software para gestão de salão de beleza, é possível configurar comissões personalizadas, vincular assistentes a seus serviços na comanda e entender a eficiência de cada um através de relatórios.
+                  </p>
+                </dd>
+              </dl>
+
+        </div>
+
+        <div class="col-md-6 funcinalidades_gestao">
+         
             <dl class="sm-center">
-
+    
               <dt>
                 <img class="img-responsive-center" src="public/img/estoque.png" alt="">
               </dt>
 
-              <div class="gestao_text">
+              
               <dd>
-                <p>
+                <p class="gestaop1 xs-center">
                   <strong>Estoque</strong>
                 </p>
-                <p class="sft-desc">
+                <p class="text-justify-mobile">
                   Tenha um controle de estoque para venda e uso interno utilizando medidas específicas como dose e ml com o programa para salão. Controle automático de venda ou uso direto na comanda. Aviso de estoque baixo, possibilidade de configurar comissão por venda ou desconto por uso pessoal.
                 </p>
               </dd>
-              </div>
             </dl>
-          </div>
+   
         </div>
 
-          <div class="row" style="margin-top: 12%;">
-            <div class="col-md-12">
+        <div class="col-md-6 funcinalidades_gestao">
+     
+            <dl class="sm-center">
+
+              <dt>
+                <img class="img-responsive-center" src="public/img/clients.png" alt="">
+              </dt>
+
+             
+              <dd>
+                <p class="gestaop1 xs-center">
+                  <strong>Clientes</strong>
+                </p>
+                <p class="text-justify-mobile">
+                  Através do software para salão você consegue cadastrar seus clientes incluindo anamnese e informações para marketing. Crie notificações para cada cliente que pode ser disparada em agendamento ou comanda. Entenda que são seus clientes mais fiéis e lucrativos através de relatórios. Ofereça lembretes e promoções por SMS e e-mail.
+                </p>
+              </dd>
+          
+            </dl>
+    
+        </div>
+
+        <div class="col-md-6 funcinalidades_gestao">
+
               <dl class="sm-center">
 
                 <dt class="">
                   <img class="img-responsive-center" src="public/img/relatorio.png" alt="">
                 </dt>
 
-                <div class="gestao_text">
+               
                 <dd>
-                  <p>
+                  <p class="gestaop1 xs-center">
                     <strong>Relatórios</strong>
                   </p>
-                  <p class="sft-desc">
+                  <p class="text-justify-mobile">
                     Entenda todos os aspectos de seu negócio como ticket médio por cliente, eficiência de seus profissionais, faltas, dívidas, gastos, cruzamento de informação que precisa e ainda pode solicitar um relatório customizado, tudo isso através do nosso programa para salão de beleza.
                   </p>
                 </dd>
-                </div>
               </dl>
-            </div>
+
         </div>
-
+      </div>
     </div>
-  </div>
-</div>
-
 <div class="mg-tp-5">
   <div class="col-md-12">
     <h2 class="text-center font-custom1">
@@ -502,26 +493,49 @@
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
           </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
+          <div class="carousel-inner" role="listbox">
               <div class="item active">
                 <img src="public/img/carousel/item1.jpg" class="img-carousel" alt="agenda-para-salao-de-beleza">
+                 <div class="carousel-caption">
+                  <h3 class="carousel-text">Busque rapidamente por qualquer termo. Altere horários rapidamente arrastando
+          para o local desejado.
+              <p style="text-align: center;">Horário bloqueados ou ocupados possuem cores diferentes.</p>
+              </h3>
+                </div>
               </div>
 
                <div class="item">
                 <img src="public/img/carousel/promocao.jpg" class="img-carousel" alt="promocoes-para-salao-de-beleza">
+                 <div class="carousel-caption">
+                  <h3 class="carousel-text">Busque rapidamente por qualquer termo. Altere horários rapidamente arrastando
+                  para o local desejado.
+                   <p style="text-align: center;">Horário bloqueados ou ocupados possuem cores diferentes.</p>
+                  </h3>
+                </div>
               </div>
 
               <div class="item">
                <img src="public/img/carousel/comissao.jpg" class="img-carousel" alt="comissoes-de-salao-de-beleza">
+                <div class="carousel-caption">
+                  <h3 class="carousel-text">Busque rapidamente por qualquer termo. Altere horários rapidamente arrastando
+          para o local desejado.
+                   <p style="text-align: center;">Horário bloqueados ou ocupados possuem cores diferentes.</p>
+                </h3>
+                </div>
               </div>
 
               <div class="item">
                <img src="public/img/carousel/comandas.jpg" class="img-carousel"   alt="comandas-para-salao-de-beleza">
+                <div class="carousel-caption">
+                  <h3 class="carousel-text">Busque rapidamente por qualquer termo. Altere horários rapidamente arrastando
+                 para o local desejado.
+                   <p style="text-align: center;">Horário bloqueados ou ocupados possuem cores diferentes.</p>
+                 </h3>
+
+                </div>
               </div>
 
             </div>
-
               <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -680,11 +694,11 @@
 <!-- DESKTOP -->
   <div class="row text-center">
     <div class="col-md-12  hidden-xs hidden-sm">
-      <button class="btn btn-default btn-custom-red" id="mensal">Pagamento Mensal</button>
-      <button class="btn btn-default btn-custom-red" id="semestral">Pagamento Semestral <br>
+      <button class="btn btn-default btn-custom-green" id="mensal">Pagamento Mensal</button>
+      <button class="btn btn-default btn-custom-green" id="semestral">Pagamento Semestral <br>
         <strong>5% de desconto</strong>
       </button>
-      <button class="btn btn-default btn-custom-red" id="anual">Pagamento Anual <br>
+      <button class="btn btn-default btn-custom-green" id="anual">Pagamento Anual <br>
         <strong>10% de desconto</strong>
       </button>
     </div>
@@ -693,15 +707,15 @@
 
   <div class="row text-center planos" style="padding-bottom: 3%;">
     <div class="col-xs-4  visible-xs visible-sm">
-      <button class="btn btn-default btn-custom-red" id="mensal"> Mensal</button>
+      <button class="btn btn-default btn-custom-green" id="mensal"> Mensal</button>
     </div>
     <div class="col-xs-4  visible-xs visible-sm">
-      <button class="btn btn-default btn-custom-red" id="semestral"> Semestral <br>
+      <button class="btn btn-default btn-custom-green" id="semestral"> Semestral <br>
         <strong>5% Off</strong>
       </button>
     </div>
     <div class="col-xs-4  visible-xs visible-sm">
-      <button class="btn btn-default btn-custom-red" id="anual">Anual<br>
+      <button class="btn btn-default btn-custom-green" id="anual">Anual<br>
         <strong>10% Off</strong>
       </button>
     </div>
@@ -806,10 +820,9 @@
     </div>
 
 
-
 <div class="container-fluid " id="footer" style="margin-top: 6%;">
   <div class="row pd-tp-7">
-    <div class="col-md-12 col-sm-4" id="resposive-resize1">
+    <div class="col-md-12 col-sm-12" id="resposive-resize1">
       <div class="row text-center">
         <div class="col-md-6 col-sm-6">
           <h2>Tire suas dúvidas</h2>
